@@ -1,0 +1,14 @@
+<h3 class="widget-title">Address &amp; Contact</h3>
+  <p>
+    <span ng-repeat="phoneNo in siteData.company.phone">
+      <i class="fa fa-phone"></i>{{phoneNo}}<br>
+    </span>
+    <span>
+      <i class="fa fa-envelope"></i>{{siteData.company.email}}
+    </span>
+  </p>
+
+  <p>
+    <i class="fa fa-map-marker"></i>
+    {{siteData.company.address}}
+  </p>

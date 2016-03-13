@@ -1,0 +1,73 @@
+<div class="entry-header">
+	<h2 class="entry-title">{{siteData.pages.property.title}}</h2>
+	<p class="entry-intro">{{siteData.pages.property.meta_description}}</p>
+</div>
+
+<div class="content-sidebar-wrap grid clearfix">
+	<div class="content col8">
+		<div class="image-gallery">
+			<img class="big-image" src="templates/iuh8845-3j943-4v393/assets/img/big/big-3.jpg" alt="countryside" />
+		</div>
+		<div class="entry-content">
+
+<h2>{{rental.name}}</h2>
+<p>
+{{rental.description}}
+</p>
+
+<h2>What we have</h2>
+<p>
+	{{rental.bedrooms}} bedrooms <br/>
+	{{rental.bathrooms}} bathrooms <br/>
+	{{rental.sleep_min}} day(s) minimum stay <br/>
+	{{rental.sleep_max}} day(s) maximum stay <br/>
+
+</p>
+
+<h2>Address</h2>
+	{{rental.address.address}} <br/>
+	{{rental.address.city}},
+	{{rental.address.state}} <br/>
+	{{rental.address.country}}
+<p>
+
+<h2>Contact</h2>
+	{{rental.phone}} <br/>
+	{{rental.email}}
+<p>
+	
+</p>
+		</div>
+	</div>
+	<div class="sidebar col4 last">
+		<div class="widget map-widget">
+		<!--<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9420.331525159025!2d-2.9956380540916534!3d53.823601342528164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b43af32be4baf%3A0xb3c7ede5056efdbb!2sNewton+Hall+Holiday+Park!5e0!3m2!1sen!2suk!4v1433324609754" width="350" height="350" frameborder="0" style="border:0"></iframe>-->
+		<iframe width="350" height="350" frameborder="0" scrolling="no"  style="border:0" src="https://maps.google.com/maps?q=43.7684906371936,11.2446784973145&hl=es;z=14&amp;output=embed"></iframe>
+		</div>
+		
+							<input type="text" id="calendar-input" />
+		<div class="calendar">
+			<header class="calendar-title">
+					<h2><i class="fa fa-calendar"></i>
+	Availability Checker</h2>
+				</header>
+		</div>
+		
+		<div class="widget facilities-widget clearfix">
+			<h2 class="widget-title">Facilities</h2>
+			<ul class="facilities-list first-row">
+				<li ng-show="rental.detail.beach">&#x2605; Beach</li>
+				<li ng-show="rental.detail.swimming_pool">&#x2605; Swimming Pool</li>
+				<li ng-show="rental.detail.room_with_a_view">&#x2605; Room With A View</li>
+			</ul>
+			<ul class="facilities-list second-row">
+				<li ng-show="rental.detail.activities_older_children">&#x2605; Older Kids</li>
+				<li ng-show="rental.detail.parking_available">&#x2605; Parking Available</li>
+				<li ng-show="rental.detail.credit_cards_accepted">&#x2605; CC Accepted</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<run-on-ready func="caravanJS"></run-on-ready>

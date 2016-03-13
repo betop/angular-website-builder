@@ -1,0 +1,57 @@
+<div class="entry-header">
+  <h2 class="entry-title">{{siteData.pages.homepage.title}}</h2>
+  <p class="entry-intro">{{siteData.pages.homepage.meta_description}}</p>
+  <a ui-sref="site.page.booking" class="entry-button ot-button">Check Availability <i class="fa fa-long-arrow-right"></i></a>
+</div>
+
+<div class="content-sidebar-wrap grid clearfix">
+  <div class="content col8">
+    <div class="image-gallery">
+      <img class="big-image" src="templates/iuh8845-3j943-4v393/assets/img/big/big-2.jpg" alt="caravan gallery" />
+      <div class="small-images clearfix">
+        <img class="small-image" src="templates/iuh8845-3j943-4v393/assets/img/small/small-4.jpg" alt="caravan gallery" />
+        <img class="small-image" src="templates/iuh8845-3j943-4v393/assets/img/small/small-3.jpg" alt="caravan gallery" />
+        <img class="small-image" src="templates/iuh8845-3j943-4v393/assets/img/small/small-2.jpg" alt="caravan gallery" />
+        <img class="small-image last" src="templates/iuh8845-3j943-4v393/assets/img/small/small-1.jpg" alt="caravan gallery" />
+      </div>
+    </div>
+    <div class="entry-content">
+      <h2>Famiy Caravan Holidays</h2>
+
+      <p>Our caravan is set behind the moutain with stunning views of the countryside. Included in your stay is free private parking and unlimited use of park facilities. The caravan sleeps up to a maximum of 8 people.</p>
+      <p>Located on one of the best caravan parks, you will have no shortage of activities to partake in. Including swimming, bowling and fishing.</p>
+
+      <h2>What Should I Bring?</h2>
+
+      <p>The caravan is supplied with fresh duvets and pillows but the linen is not provided. We offer packs for hire or you can bring your own. The caravan is cleaned weekly to ensure your stay is pristine.</p>
+    </div>
+  </div>
+  <div class="sidebar col4 last">
+    <input type="text" id="calendar-input" />
+    <div class="calendar">
+      <header class="calendar-title">
+        <h2><i class="fa fa-calendar"></i>
+  Availability Checker</h2>
+      </header>
+    </div>
+    <div class="widget facilities-widget clearfix">
+      <h2 class="widget-title">Facilities</h2>
+      <ul class="facilities-list first-row">
+        <li>&#x2605; Swimming Pool</li>
+        <li>&#x2605; Kids Fun Club</li>
+        <li>&#x2605; Amusement Arcade</li>
+        <li>&#x2605; Fishing Lake</li>
+      </ul>
+      <ul class="facilities-list second-row">
+        <li>&#x2605; Swimming Pool</li>
+        <li>&#x2605; Kids Fun Club</li>
+        <li>&#x2605; Amusement Arcade</li>
+        <li>&#x2605; Fishing Lake</li>
+      </ul>
+    </div>
+    <div class="widget address-widget" ng-include="'templates/iuh8845-3j943-4v393/views/address.html'">
+    </div>
+  </div>
+</div>
+
+<run-on-ready func="caravanJS"></run-on-ready>

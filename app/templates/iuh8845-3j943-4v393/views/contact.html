@@ -1,0 +1,66 @@
+<div class="entry-header">
+	<h2 class="entry-title">Contact Us</h2>
+	<p class="entry-intro">We look forward to hearing from you.</p>
+</div>
+
+<div class="content-sidebar-wrap grid clearfix">
+	<div class="content col8">
+		<div id="booking-form">
+		<h2 class="contact-header">Contact Us</h2>
+		<p>If you can't find the information you need in our Frequently Asked Questions section, please contact us and we will be happy to assist.</p>
+
+		<p>Our offices are open between 9am - 6pm, 7 days a week.</p>
+		<form target="_blank" action="form.php" method="post">
+			<div class="form-row">
+				<label for="contact-name">Name</label>
+				<input type="text" name="name" id="contact-name" placeholder="Name">
+			</div>
+			<div class="form-row last">
+				<label for="contact-email">Email</label>
+				<input type="email" name="email" id="contact-email" placeholder="Email Address">
+			</div>
+			<div class="form-row">
+				<label for="contact-phone">Phone</label>
+				<input type="text" name="phone" id="contact-phone" placeholder="Telephone Number">
+			</div>	
+			<div class="form-row last">
+				<label for="contact-reason">Reason for Enquiry</label>
+				<select id="contact-reason" name="reason">
+					<option value="booking">Booking Enquiry</option>
+					<option value="general">General Question</option>
+					<option value="review">Review</option>
+					<option value="photo">Photo Submit</option>
+				</select>
+			</div>
+			<div class="form-row message">
+				<label class="textarea-label" for="contact-message">Message</label>
+				<textarea rows="5" id="contact-message"  name="message"></textarea>
+			</div>
+			<input type="submit" class="ot-button" value="Send Enquiry">
+		</form>
+	</div>	
+	
+	</div>
+	<div class="sidebar col4 last">
+
+		<div class="widget facilities-widget clearfix">
+			<h2 class="widget-title">Facilities</h2>
+			<ul class="facilities-list first-row">
+				<li>&#x2605; Swimming Pool</li>
+				<li>&#x2605; Kids Fun Club</li>
+				<li>&#x2605; Amusement Arcade</li>
+				<li>&#x2605; Fishing Lake</li>
+			</ul>
+			<ul class="facilities-list second-row">
+				<li>&#x2605; Swimming Pool</li>
+				<li>&#x2605; Kids Fun Club</li>
+				<li>&#x2605; Amusement Arcade</li>
+				<li>&#x2605; Fishing Lake</li>
+			</ul>
+		</div>
+		<div class="widget address-widget" ng-include="'templates/iuh8845-3j943-4v393/views/address.html'">
+		</div>
+	</div>
+</div>
+
+<run-on-ready func="caravanJS"></run-on-ready>

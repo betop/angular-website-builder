@@ -1,0 +1,703 @@
+/*
+
+Table of Content
+
+- Typography
+- Misc
+- Header
+- Logo
+- Navigation
+- Content
+- Sidebar & Widget
+- Footer
+- Index Template
+- Reviews Template
+- Facilities Template
+- FAQs Template
+- Forms
+- Responsive
+
+*/
+
+/* Typography */
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	background: #d1cbbc url(../img/bg2.jpg) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	line-height: 1.65
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	color: #714721;
+	margin-top: 0
+}
+
+/* Misc */
+
+.last {
+	margin-right: 0 !important
+}
+
+.fa {
+	padding-right: 5px
+}
+
+.ot-button {
+	border-radius: 3px;
+	background: #1b9e18;
+	border: 1px solid #1b9e18;
+	color: #FFF;
+	line-height: normal;
+	padding: 1em 1.5em;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 14px;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 0.5px
+}
+
+.ot-button:hover {
+	color: #FFF;
+	text-decoration: none;
+	background: #179014;
+	border-color: #179014;
+	transition: background-color 0.5s ease;
+}
+
+.entry-button {
+	margin-top: 25px
+}
+
+.ot-button .fa {
+	padding: 0 0 0 10px
+}
+
+.gallery-image-small {
+	margin-top: 25px
+}
+
+.widget.map-widget {
+	padding: 0
+}
+
+.header-phone a {
+	color: white
+}
+
+.widget a {
+	color: #F0EDE6
+}
+/* Header */
+
+.pre-header {
+	background: #032F49;
+	padding: 10px;
+	color: #FFF;
+	font-size: 13px;
+}
+
+.header-social .fa {
+	padding: 0 0 0 15px;
+	opacity: 0.70;
+	color: white
+}
+
+.header-social .fa:hover {
+	opacity: 1;
+}
+
+.header-phone {
+	opacity: 0.75
+}
+
+.header {
+	padding: 40px 0;
+	background-color: #063C5B;
+}
+/* Logo */
+
+.logo {
+	font-family: 'Pacifico', cursive;
+	color: white;
+	margin: 0 0 .75rem;
+	line-height: 1;
+	letter-spacing: 1px;
+	font-weight: normal;
+	opacity: 0.9
+}
+
+.logo-description {
+	color: white;
+	opacity: 0.8;
+	font-size: 14px
+}
+/* Navigation */
+
+.navigation li {
+	list-style-type: none;
+}
+
+.header-navigation li:before {
+	content: "\007C";
+	position: absolute;
+	color: rgba(255, 255, 255, 0.23);
+	top: 15px;
+	margin-left: -3px
+}
+
+.header-navigation li:first-child:before {
+	content: "";
+}
+
+.navigation li a {
+	text-decoration: none
+}
+
+.header-navigation {
+	background: #1f506c;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0;
+	float: right;
+	font-size: 14px;
+	margin: 0 0 4px;
+	position: relative
+}
+
+.header-navigation li {
+	display: inline-block;
+}
+
+.header-navigation li a {
+	color: white;
+	padding: 15px 25px;
+	display: block;
+	opacity: 0.8
+}
+
+.header-navigation li a:hover {
+	opacity: 1
+}
+
+.header-navigation li ul {
+	position: absolute;
+	visibility: hidden;
+	margin: 0;
+	padding: 0;
+	background-color: #1F506C;
+	width: 103px;
+	text-align: center;
+}
+
+.header-navigation li ul li {
+	display: inline;
+	float: none;
+}
+
+.header-navigation li ul li a {
+	border-top: 1px solid rgba(255, 255, 255, 0.17);
+}
+/* Content */
+
+.entry-header {
+	text-align: center;
+	color: white;
+	margin: 150px 0
+}
+
+.entry-title {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+	font-size: 60px;
+	color: white;
+	line-height: 1
+}
+
+.entry-intro {
+	max-width: 700px;
+	margin: 0 auto;
+	font-size: 18px;
+	opacity: .6
+}
+
+.entry-intro a {
+	max-width: 700px;
+	margin: 0 auto;
+	font-size: 18px;
+	color: white
+}
+
+.content-sidebar-wrap {
+	background: #f0ede6;
+	border-radius: 3px;
+	padding: 50px;
+	margin-bottom: 50px
+}
+
+.entry-content {
+	color: #714721
+}
+
+/* Sidebar & Widgets */
+
+.widget {
+	margin-bottom: 3rem;
+	padding: 20px;
+	color: #F0EDE6;
+	font-size: 13px
+}
+
+.widget-title {
+	margin-top: 0;
+	letter-spacing: 1px;
+	color: #F0EDE6;
+	font-size: 16px
+}
+
+.google-map {
+	max-width: 100%
+}
+
+.facilities-widget {
+	background: #719a6b;
+	border-radius: 3px
+}
+
+.facilities-widget .widget-title,
+.address-widget .widget-title {
+	text-align: center
+}
+
+.facilities-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left
+}
+
+.first-row {
+	width: 47.5%;
+	margin-right: 5%;
+}
+
+.second-row {
+	width: 47.5%;
+}
+
+.facilities-list li {
+	padding-bottom: 0.5rem
+}
+
+.address-widget {
+	background: #999a6b;
+	border-radius: 3px
+}
+
+.address-widget {
+	text-align: center
+}
+
+.availablility-checker-widget {
+	padding: 0
+}
+
+.calendar-title {
+	background: #644531;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+
+.calendar-title h2 {
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	color: #F0EDE6;
+	margin: 0;
+	padding: 10px
+}
+
+/* Footer */
+
+.footer {
+	background: #7e563e;
+	border-radius: 3px;
+	margin-bottom: 50px;
+	padding: 50px;
+	padding-bottom: 35px
+}
+
+.footer .widget {
+	margin-bottom: 0;
+	padding: 0
+}
+
+.footer-widget .widget-title {
+	color: #d1cbbc
+}
+
+.footer-widget {
+	color: #c2b7a8
+}
+
+.footer-image {
+	width: 30%;
+	margin: 0 3% 3% 0
+}
+
+.recent-posts {
+	list-style: none;
+	padding: 0
+}
+
+.recent-posts li {
+	border-bottom: 1px solid #93735e;
+	padding: 10px 10px 10px 0;
+}
+
+.recent-posts li:after {
+	content: "\203A";
+	float: right
+}
+
+.recent-posts li a {
+	text-decoration: none;
+	color: #c2b7a8
+}
+
+.first {
+	padding-top: 0 !important
+}
+
+/* Index Template */
+
+.image-gallery {
+	margin-bottom: 2rem
+}
+
+.small-image {
+	width: 23.5%;
+	margin-right: 2%;
+	margin-top: 2%;
+	float: left
+}
+
+/* Reviews Template */
+
+.testimonial-content {
+	position: relative;
+	background: #FFFFFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 1.5em;
+	font-size: 14px;
+	color: #727272
+}
+
+.testimonial-content:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 14px 8px 0;
+	border-color: #FFFFFF transparent;
+	display: block;
+	width: 0;
+	z-index: 1;
+	bottom: -14px;
+	left: 25px;
+}
+
+.testimonial-content p:last-child {
+	margin-bottom: 0
+}
+
+.testimonial-author-image {
+	border-radius: 500px;
+	margin-top: 25px;
+	float: left;
+	width: 73px
+}
+
+.testimonial-author-info {
+	font-size: 14px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 15px;
+	margin-bottom: 50px
+}
+
+.testimonial-author:last-child .testimonial-author-info {
+	margin-bottom: 0
+}
+
+.testimonial-author-name {
+	display: block
+}
+
+.testimonial-author-address {
+	font-style: italic
+}
+
+/* Facilities Template */
+
+.facility {
+	margin-bottom: 25px
+}
+
+.facility h3 {
+	margin-top: 1em
+}
+/* FAQs Template */
+
+.faqs {
+	position: relative;
+}
+
+.question {
+	cursor: pointer;
+}
+
+.question.active {
+	font-weight: 700;
+}
+
+.answer {
+	position: relative;
+	display: none
+}
+
+.answer p {
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+.contact-header {
+	margin-top: 0
+}
+
+/* Forms */
+
+label {
+	display: block;
+	vertical-align: middle;
+	padding-bottom: 5px;
+}
+
+.textarea-label {
+	vertical-align: middle;
+}
+
+input,
+select,
+textarea {
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.form-row {
+    margin-bottom: 1em;
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+.form-row.message {
+width: 100%	
+}
+
+input.ot-button {
+	width: auto;
+	text-transform: none
+}
+
+
+
+/* Responsive */
+
+.tinynav {
+	display: none
+}
+/* styles for mobile */
+
+@media screen and (max-width: 600px) {
+	.tinynav {
+		display: block;
+			margin: 0 auto
+	}
+	.header-navigation {
+		display: none
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.branding {
+		text-align: center;
+		margin-bottom: 25px
+	}
+	
+	.navigation {
+		text-align: center;
+	}
+	
+	.header-navigation {
+		float: none	
+	}
+	
+	.entry-header {
+		margin: 150px 25px	
+	}
+}
+
+
+
+#calendar-input {
+	display: none	
+}
+
+.calendar {
+	margin-bottom: 3rem	
+}
+
+.gldp-default {
+	width: 100% !important;
+	display: block !important;
+	font-size: 13px
+}
+
+/* Core style for every cell */
+.gldp-default .core {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+	    color: #9A9A9A;
+	background: #ffffff;
+	text-transform: uppercase;
+	    width: 14.2857142857% !important;
+	 height: 40px !important;
+    line-height: 40px !important;
+}
+
+/* Month/Year text and select */
+.gldp-default .monyear,
+.gldp-default .monyear select {
+	font-size: 16px !important;
+	font-weight: bold;
+	    width: 25% !important;
+	    background: #8d6a54;
+	    height: 40px !important;
+    line-height: 40px !important;
+}
+
+.gldp-default .monyear.title {
+width: 50% !important;
+	color:#F0EDE6
+}
+
+/* Month/Year text */
+.gldp-default .monyear span {
+	margin: 0 5px 0 0;
+}
+
+/* Prev/Next arrows */
+.gldp-default .prev-arrow,
+.gldp-default .next-arrow {
+	color: #F0EDE6;
+}
+
+.gldp-default .prev-arrow:active,
+.gldp-default .next-arrow:active {
+	color: #f00;
+}
+
+.gldp-default .prev-arrow-off,
+.gldp-default .next-arrow-off {
+	color: #222;
+	opacity: 0.15;
+}
+
+/* Days of the week */
+.gldp-default .dow {
+	color: #fff;
+	font-weight: bold;
+	cursor: default !important;
+	background: #ab7f66; 
+	
+}
+
+/* Weekdays */
+.gldp-default .mon,
+.gldp-default .tue,
+.gldp-default .wed,
+.gldp-default .thu,
+.gldp-default .fri {
+
+}
+
+/* Weekend days */
+.gldp-default .sat,
+.gldp-default .sun {
+
+}
+
+/* Selectable days that are outside of current month being shown */
+.gldp-default .outday {
+	       color: #D1D1D1;
+}
+
+/* Hover */
+.gldp-default .mon:hover,
+.gldp-default .tue:hover,
+.gldp-default .wed:hover,
+.gldp-default .thu:hover,
+.gldp-default .fri:hover,
+.gldp-default .sat:hover,
+.gldp-default .sun:hover {
+	    background: #E3F9EB;
+	color: #000;
+}
+
+/* Non-Selectable days */
+.gldp-default .noday {
+	color: #444;
+	font-weight: normal;
+	cursor: wait !important;
+	background: #aaaaaa;
+}
+
+/* Currently selected day */
+.gldp-default .selected {
+	    color: #000;
+	        background: #e3f2f9;
+}
+
+/* Today */
+.gldp-default .today {
+	color: #fff;
+	font-weight: bold;
+	border-color: #00c;
+	background: #88bfe8;
+}
+
+/* Special */
+.gldp-default .special {
+	color: #fff;
+	font-weight: bold;
+	border-color: #0c0;
+	background: #88e888;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind="pageInfo.title">Tokeet Website Builder</title>
+  <meta name="description" content="{{pageInfo.meta_description}}">
+  <meta name="keywords" content="{{pageInfo.meta_keywords}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="bower_components/please-wait/build/please-wait.css">
+  <script src="bower_components/please-wait/build/please-wait.js"></script>
+
+  <link rel="stylesheet" href="assets/css/import.css">
+  <link rel="stylesheet" href="assets/css/app-styles.css">
+  
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>  
+</head>
+
+<body>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Preloading Screen -->
+  <script type="text/javascript">
+    window.loading_screen = window.pleaseWait({
+      logo: '',
+      backgroundColor: '#f46d3b',
+      loadingHtml: '<div class="spinner"><div class="dot1"></div><div class="dot2"></div></div><h1 class="loading-text">Loading in a sec ...</h1>'
+    });
+  </script>
+  
+  <!-- Angular Root View -->
+  <ui-view class="ng-cloak"></ui-view>
+
+  <!-- API Fail Screen -->
+  <div class="site-load-fail-screen pg-loading-screen pg-loading">
+    <div class="pg-loading-inner">
+      <div class="pg-loading-center-outer">
+        <div class="pg-loading-center-middle">
+          <h2>Sorry, there seems to be a problem with connection to the server.<br/>Please try <a href="#" onclick="location.reload(); return false;">reload</a>.</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="config/config.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bluebird/js/browser/bluebird.js"></script>
+  
+  <script data-main="main.js" src="bower_components/requirejs/require.js"></script>
+  
+</body>
+</html>
